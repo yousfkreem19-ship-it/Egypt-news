@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>أسئلة وأجوبة - Canva</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.8;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .qa {
+      margin-bottom: 20px;
+    }
+    button.question {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      text-align: right;
+      background: #5b86e5;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button.question:hover {
+      background: #36d1dc;
+    }
+    .answer {
+      display: none;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 8px;
+      padding: 15px;
+      font-size: 15px;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #5b86e5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>❓ أسئلة وأجوبة عن برنامج Canva</h1>
+    <p>من إعداد Mr/Yousf Boyka</p>
+  </header>
+
+  <main>
+    <div class="qa">
+      <button class="question">1️⃣ ما هو Canva؟</button>
+      <div class="answer">هو أداة تصميم جرافيك أونلاين بتسهل عمل صور، بوستات، عروض تقديمية بسهولة واحترافية.</div>
+    </div>
+
+    <div class="qa">
+      <button class="question">2️⃣ إزاي أختار قالب جاهز؟</button>
+      <div class="answer">من الصفحة الرئيسية، اختار نوع التصميم (بوستر، إنستجرام..)، بعدها هتلاقي مكتبة قوالب جاهزة.</div>
+    </div>
+
+    <div class="qa">
+      <button class="question">3️⃣ إيه فايدة خاصية Drag & Drop؟</button>
+      <div class="answer">تقدر تسحب الصور أو العناصر وتفلتها في مكانها بسهولة، من غير تعقيد زي البرامج الكبيرة.</div>
+    </div>
+
+    <div class="qa">
+      <button class="question">4️⃣ هل Canva ينفع أستخدمه في تصميم لوجو؟</button>
+      <div class="answer">أيوة، فيه أدوات ولوجوهات جاهزة، وتقدر تعدل عليهم أو تبدأ من الصفر.</div>
+    </div>
+
+    <div class="qa">
+      <button class="question">5️⃣ إزاي أشارك التصميم مع غيري؟</button>
+      <div class="answer">تقدر تعمل Share وتبعت لينك، أو تحمل التصميم كصورة أو PDF.</div>
+    </div>
+
+    <a href="index.html">⬅ العودة للصفحة الرئيسية</a>
+  </main>
+
+  <script>
+    const questions = document.querySelectorAll(".question");
+    questions.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const answer = btn.nextElementSibling;
+        answer.style.display = (answer.style.display === "block") ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
